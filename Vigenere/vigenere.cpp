@@ -42,20 +42,15 @@ string vigenere_decrypt(const string& cipher, const string& key) {
 
 int main() {
     string text, key;
-
     cout << "Enter text to encrypt: ";
     getline(cin, text);
-
     cout << "Enter the encryption key: ";
     getline(cin, key);
-
     // Encrypt the text
     string cipher = vigenere_encrypt(text, key);
     cout << "Encrypted text: " << cipher << endl;
-
     // Decrypt the ciphered text
     string decrypted = vigenere_decrypt(cipher, key);
     cout << "Decrypted text: " << decrypted << endl;
-
     return 0;
 }
